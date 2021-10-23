@@ -3,5 +3,29 @@
 }
 
 #image {
-  width: 30%;
+  max-width: 200px;
+  min-height: 200px;
+  border-radius: 100px;
+}
+
+.client {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  text-align: center;
+}
+
+#pet {
+  margin-top: -5px;
+}
+
+h3 {
+ color: black;
+ display: inline;
+}
+
+#navHome {
+  padding-left: 500px;
+  padding-right: 500px;
 }

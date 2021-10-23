@@ -5,7 +5,7 @@ import Show from "../pages/Show";
 import About from "../pages/About"
 import ContactUs from "../pages/ContactUs";
 
-function Home(props){
+function Home(props) {
     const [client, setClient] = useState(null);
 
     const URL = "https://happytail-backend.herokuapp.com/home/";
@@ -19,37 +19,37 @@ function Home(props){
     const createClient = async (pet) => {
         // make post request to create people
         await fetch(URL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "Application/json",
-          },
-          body: JSON.stringify(pet),
+            method: "POST",
+            headers: {
+                "Content-Type": "Application/json",
+            },
+            body: JSON.stringify(pet),
         });
         // update list of people
         getClient();
-      };
+    };
 
-      useEffect(() => getClient(), []);
-    
-      return (
+    useEffect(() => getClient(), []);
+
+    return (
         <main>
-      <Switch>
-        <Route exact path="/">
-          <Index client={client} createClient={createClient} />
-        </Route>
-        <Route
-          path="/home/:id"
-          render={(rp) => (
-            <Show
-              {...rp}
-            />
-          )}
-        />
-        <About />
-        <ContactUs />
-      </Switch>
-    </main>
+            <Switch>
+                <Route exact path="/">
+                    <Index client={client} createClient={createClient} />
+                </Route>
+                <Route
+                    path="/home/:id"
+                    render={(rp) => (
+                        <Show
+                            {...rp}
+                        />
+                    )}
+                />
+                <About />
+                <ContactUs />
+            </Switch>
+        </main>
     );
-  } 
-  
-  export default Home;
+}
+
+export default Home;

@@ -17,7 +17,6 @@ function Home(props) {
     };
 
     const createClient = async (pet) => {
-        // make post request to create people
         await fetch(URL, {
             method: "POST",
             headers: {
@@ -25,14 +24,32 @@ function Home(props) {
             },
             body: JSON.stringify(pet),
         });
-        // update list of people
         getClient();
     };
+
+    const updateClient = async (pet, id) => {
+        // make put request to create people
+        await fetch(URL + id, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "Application/json",
+          },
+          body: JSON.stringify(pet),
+        });
+        getClient();
+      }
+    
+      const deleteClient = async id => {
+        await fetch(URL + id, {
+          method: "DELETE",
+        });
+        getClient();
+      }
 
     useEffect(() => getClient(), []);
 
     return (
-        <main>
+        <div>
             <Switch>
                 <Route exact path="/">
                     <Index client={client} createClient={createClient} />
@@ -41,6 +58,9 @@ function Home(props) {
                     path="/home/:id"
                     render={(rp) => (
                         <Show
+                        client={client}
+                        updateClient={updateClient}
+                        deleteClient={deleteClient}
                             {...rp}
                         />
                     )}
@@ -48,7 +68,7 @@ function Home(props) {
                 <About />
                 <ContactUs />
             </Switch>
-        </main>
+        </div>
     );
 }
 

@@ -29,3 +29,9 @@ h3 {
   padding-left: 500px;
   padding-right: 500px;
 }
+
+#showImage {
+  max-width: 300px;
+  min-height: 300px;
+  border-radius: 100px;
+}

@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import Index from "../pages/Index";
 import Show from "../pages/Show";
-import About from "../pages/About"
-import ContactUs from "../pages/ContactUs";
 
 function Home(props) {
     const [client, setClient] = useState(null);
@@ -65,8 +63,6 @@ function Home(props) {
                         />
                     )}
                 />
-                <About />
-                <ContactUs />
             </Switch>
         </div>
     );

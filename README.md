@@ -27,6 +27,7 @@ Deploy Happy Tail [link](https://goofy-goldwasser-3e86bc.netlify.app/)
 
 ## Future Enhancements
 * Admin only log in
+* Add footer with emergency/vet hospitals 
 
 ## Images Used
 * Background Image: https://secure.img1-fg.wfcdn.com/im/46754057/resize-h800-w800%5Ecompr-r85/8420/84209975/Keeble+Children+Removable+Peel+and+Stick+Wallpaper+Panel.jpg

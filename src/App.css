@@ -188,3 +188,71 @@ form {
 #needsTitle {
   font-size: 35px;
 }
+
+.about {
+  background-color: rgb(169, 197, 160);
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  border: solid rgba(2, 5, 2, 0.5);
+}
+
+#aboutTitle {
+  margin-top: -5px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: whitesmoke;
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+#aboutDescription {
+  font-family: 'Zen Antique', serif;
+  font-size: 18px;
+  color: whitesmoke;
+  margin-bottom: 100px;
+  border: solid rgba(2, 5, 2, 0.2);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(2, 5, 2, 0.4);
+}
+
+.contact {
+  background-color: rgb(169, 197, 160);
+  text-align: center;
+  padding-top: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  border: solid rgba(2, 5, 2, 0.5);
+}
+
+#contactTitle {
+  margin-top: -5px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: whitesmoke;
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+#contactDescription {
+  font-family: 'Zen Antique', serif;
+  font-size: 18px;
+  color: whitesmoke;
+  margin-bottom: 100px;
+  border: solid rgba(2, 5, 2, 0.2);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(2, 5, 2, 0.4);
+}

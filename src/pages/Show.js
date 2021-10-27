@@ -21,73 +21,86 @@ function Show(props) {
     props.deleteClient(pet._id);
     props.history.push("/");
   }
-  
+
   return (
-    <div className="petInfo">
-      <h1 id="showPetName">{pet.petName}</h1>
-      <img id="showImage" src={pet.imageLink} alt="" />
-      <button id="deleteBtn" onClick={removePet}>Delete</button>
-      <div class="service">
-        <h4>Service: </h4>
-        <p>{pet.service}</p>
-      </div>
-      <div class="schedule">
-        <h4>Schedule: </h4>
-        <p>{pet.schedule}</p>
-      </div>
-      <div class="clientsName">
-        <h4>Client's Name: </h4>
-        <p>{pet.clientsName}</p>
-      </div>
-      <div class="petNeeds">
-        <h4>Pet Needs: </h4>
-        <p>{pet.petNeeds}</p>
-      </div>
+    <div><div>
       <form onSubmit={handleSubmit}>
-        <input 
-        type="text"
-        value={editForm.petName}
-        name="petName"
-        placeholder="pet name"
-        onChange={handleChange}
+        <input
+          id="inputPetName"
+          type="text"
+          value={editForm.petName}
+          name="petName"
+          placeholder="pet name"
+          onChange={handleChange}
         />
-        <input 
-        type="text"
-        value={editForm.imageLink}
-        name="imageLink"
-        placeholder="image link"
-        onChange={handleChange}
+        <input
+          id="inputImageLink"
+          type="text"
+          value={editForm.imageLink}
+          name="imageLink"
+          placeholder="image link"
+          onChange={handleChange}
         />
-        <input 
-        type="text"
-        value={editForm.service}
-        name="service"
-        placeholder="service"
-        onChange={handleChange}
+        <input
+          id="inputService"
+          type="text"
+          value={editForm.service}
+          name="service"
+          placeholder="service"
+          onChange={handleChange}
         />
-        <input 
-        type="text"
-        value={editForm.schedule}
-        name="schedule"
-        placeholder="schedule"
-        onChange={handleChange}
+        <input
+          id="inputSchedule"
+          type="text"
+          value={editForm.schedule}
+          name="schedule"
+          placeholder="schedule"
+          onChange={handleChange}
         />
-        <input 
-        type="text"
-        value={editForm.clientsName}
-        name="clientsName"
-        placeholder="client's name"
-        onChange={handleChange}
+        <input
+          id="inputClientsName"
+          type="text"
+          value={editForm.clientsName}
+          name="clientsName"
+          placeholder="client's name"
+          onChange={handleChange}
         />
-        <input 
-        type="text"
-        value={editForm.petNeeds}
-        name="petNeeds"
-        placeholder="pet needs"
-        onChange={handleChange}
+        <input
+          id="inputPetNeeds"
+          type="text"
+          value={editForm.petNeeds}
+          name="petNeeds"
+          placeholder="pet needs"
+          onChange={handleChange}
         />
-        <input type="submit" value="Update Info" />
+        <input id="inputBtn" type="submit" value="Update Info" />
       </form>
+    </div>
+    <div className="allPetInfo">
+      <div className="showNameImg">
+        <h1 id="showPetName">{pet.petName}</h1>
+        <img id="showImage" src={pet.imageLink} alt="" /><br />
+        <button id="deleteBtn" onClick={removePet}>Delete</button>
+      </div>
+      <div className="petInfo">
+        <div className="service">
+          <h4 id="serviceTitle">Service: </h4>
+          <p>{pet.service}</p>
+        </div>
+        <div className="schedule">
+          <h4 id="scheduleTitle">Schedule: </h4>
+          <p>{pet.schedule}</p>
+        </div>
+        <div className="clientsName">
+          <h4 id="clientTitle">Client's Name: </h4>
+          <p>{pet.clientsName}</p>
+        </div>
+        <div className="petNeeds">
+          <h4 id="needsTitle">Pet Needs: </h4>
+          <p>{pet.petNeeds}</p>
+        </div>
+      </div>
+      </div>
     </div>
   );
 }

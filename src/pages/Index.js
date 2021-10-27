@@ -33,7 +33,8 @@ function Index(props) {
   const loaded = () => {
     return props.client.map((pet) => (
       <div key={pet._id} className="client">
-        <Link to={`/home/${pet._id}`}><img id="image" src={pet.imageLink} alt={pet.petName} /><h2 id="pet">{pet.petName}</h2></Link>
+        <Link to={`/home/${pet._id}`}><img id="image" src={pet.imageLink} alt={pet.petName} /></Link>
+        <h2 id="pet">{pet.petName}</h2>
       </div>
     ));
   };
@@ -43,9 +44,10 @@ function Index(props) {
   };
 
   return (
-    <div>
+    <div className="forms">
       <form onSubmit={handleSubmit}>
         <input
+          id="inputPetName"
           type="text"
           value={newForm.petName}
           name="petName"
@@ -53,6 +55,7 @@ function Index(props) {
           onChange={handleChange}
         />
         <input
+          id="inputImageLink"
           type="text"
           value={newForm.imageLink}
           name="imageLink"
@@ -60,6 +63,7 @@ function Index(props) {
           onChange={handleChange}
         />
         <input
+          id="inputService"
           type="text"
           value={newForm.service}
           name="service"
@@ -67,6 +71,7 @@ function Index(props) {
           onChange={handleChange}
         />
         <input
+          id="inputSchedule"
           type="text"
           value={newForm.schedule}
           name="schedule"
@@ -74,6 +79,7 @@ function Index(props) {
           onChange={handleChange}
         />
         <input
+          id="inputClientsName"
           type="text"
           value={newForm.clientsName}
           name="clientsName"
@@ -81,13 +87,14 @@ function Index(props) {
           onChange={handleChange}
         />
         <input
+          id="inputPetNeeds"
           type="text"
           value={newForm.petNeeds}
           name="petNeeds"
           placeholder="pet needs"
           onChange={handleChange}
         />
-        <input type="submit" value="Create Client" />
+        <input id="inputBtn" type="submit" value="Create Client" />
       </form>
       {props.client ? loaded() : loading()}
     </div>

@@ -48,6 +48,7 @@ function Home(props) {
 
     return (
         <div>
+            <h1 id="title">Happy Tail</h1>
             <Switch>
                 <Route exact path="/">
                     <Index client={client} createClient={createClient} />

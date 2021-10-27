@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  background-image: url("https://secure.img1-fg.wfcdn.com/im/46754057/resize-h800-w800%5Ecompr-r85/8420/84209975/Keeble+Children+Removable+Peel+and+Stick+Wallpaper+Panel.jpg");
+  padding-bottom: 15px;
 }
 
 #image {
@@ -10,31 +10,181 @@
   max-height: 100px;
   min-height: 200px;
   border-radius: 100px;
+  margin-top: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .client {
-  margin-top: 20px;
-  padding-bottom: 20px;
-  display: inline-block;
+  margin-top: 70px;
   margin-left: 100px;
   margin-right: 100px;
+  padding-bottom: 20px;
+  display: inline-block;
+  background: rgb(117, 129, 115);
+  border-radius: 15px;
 }
 
 #pet {
-  margin-top: -5px;
+  margin-top: 5px;
+  color: whitesmoke;
+  font-family: "Lobster", cursive;
 }
 
 h3 {
- color: black;
- display: inline;
+  color: black;
+  display: inline;
+}
+
+.navBar {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 5px;
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+  background: rgb(153, 101, 21);
+  border: solid rgb(2, 5, 2, 0.2);
+}
+
+#navHome {
+  color: whitesmoke;
+  padding-left: 50px;
+}
+
+#navAbout {
+  float: left;
+  margin-left: 150px;
+  color: whitesmoke;
+}
+
+#navContactUs {
+  float: right;
+  margin-right: 150px;
+  color: whitesmoke;
+}
+
+#title {
+  margin-bottom: 40px;
+  margin-left: 800px;
+  margin-right: 800px;
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+}
+
+input {
+  background: whitesmoke;
+}
+
+form {
+  background-color: rgb(153, 101, 21);
+  border: solid rgb(2, 5, 2, 0.2);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#inputPetName {
+  margin-right: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#inputImageLink {
+  margin-right: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#inputService {
+  margin-right: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#inputSchedule {
+  margin-right: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#inputClientsName {
+  margin-right: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#inputPetNeeds {
+  margin-right: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#inputBtn {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-color: rgb(197, 239, 203);
+}
+
+#showPetName {
+  font-family: "Lobster", cursive;
 }
 
 #showImage {
   max-width: 300px;
   min-height: 300px;
   border-radius: 100px;
+  margin-bottom: 20px;
 }
 
-nav {
-  text-align: center;
+#deleteBtn {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  background-color: rgb(197, 239, 203);
+  margin-bottom: 15px;
+}
+
+.allPetInfo {
+  margin-bottom: 200px;
+}
+
+.showNameImg {
+  float: left;
+  margin-top: -65px;
+  margin-left: 500px;
+}
+
+.petInfo {
+  margin-top: 105px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  background-color: pink;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.service {
+  background-color: rgb(2, 5, 2, 0.1);
+}
+
+#serviceTitle {
+  font-size: 35px;
+}
+
+.schedule {
+  background-color: rgb(2, 5, 2, 0.2);
+}
+
+#scheduleTitle {
+  font-size: 35px;
+}
+
+.clientsName {
+  background-color: rgb(2, 5, 2, 0.3);
+}
+
+#clientTitle {
+  font-size: 35px;
+}
+
+.petNeeds {
+  background-color: rgb(2, 5, 2, 0.4);
+}
+
+#needsTitle {
+  font-size: 35px;
 }

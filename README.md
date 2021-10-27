@@ -1,5 +1,5 @@
 # Happy Tail
-As a user Recipe Box let's you store, add, edit, and delete recipes. AAU I should be to add a recipe title, image link, description, prep time, ingredients, and instructions for each recipe.
+As a user Happy Tail let's you store, add, update, and delete clients/pets. AAU I should be to add information like, a pet name, image link, service, schedule, client's name, and pet's needs for each client/pet.
 
 ## Screenshots
 ![Index Page desktop view](https://i.imgur.com/MYP5ytF.png)

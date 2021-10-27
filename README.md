@@ -1,5 +1,5 @@
 # Happy Tail
-As a user Happy Tail let's you store, add, update, and 
+Happy Tail is a full CRUD application built with MERN. As a user Happy Tail let's you store, add, update, and 
 delete clients/pets. AAU I should be to add information 
 like, a pet name, image link, service, schedule, client's 
 name, and pet's needs for each client/pet.

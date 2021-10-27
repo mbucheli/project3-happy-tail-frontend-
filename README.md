@@ -20,7 +20,7 @@ As a user Recipe Box let's you store, add, edit, and delete recipes. AAU I shoul
 ![Index Page desktop view](https://i.imgur.com/wWovn6U.png)
 
 ## Getting Started
-Deploy Happy Tail [link](https://goofy-goldwasser-3e86bc.netlify.app/home/617458f0dcfb003214057e03)
+Deploy Happy Tail [link](https://goofy-goldwasser-3e86bc.netlify.app/)
 
 ## Future Enhancements
 * Admin only log in

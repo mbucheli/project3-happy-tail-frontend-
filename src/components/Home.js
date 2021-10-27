@@ -26,7 +26,6 @@ function Home(props) {
     };
 
     const updateClient = async (pet, id) => {
-        // make put request to create people
         await fetch(URL + id, {
           method: "PUT",
           headers: {

@@ -65,10 +65,9 @@ h3 {
 
 #title {
   margin-bottom: 40px;
-  margin-left: 800px;
-  margin-right: 800px;
   font-family: "Lobster", cursive;
   font-size: 50px;
+  text-align: center;
 }
 
 input {

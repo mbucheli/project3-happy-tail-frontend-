@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Index from "../pages/Index";
 import Show from "../pages/Show";
 
@@ -27,43 +27,41 @@ function Home(props) {
 
     const updateClient = async (pet, id) => {
         await fetch(URL + id, {
-          method: "PUT",
-          headers: {
-            "Content-Type": "Application/json",
-          },
-          body: JSON.stringify(pet),
+            method: "PUT",
+            headers: {
+                "Content-Type": "Application/json",
+            },
+            body: JSON.stringify(pet),
         });
         getClient();
-      }
-    
-      const deleteClient = async id => {
+    }
+
+    const deleteClient = async id => {
         await fetch(URL + id, {
-          method: "DELETE",
+            method: "DELETE",
         });
         getClient();
-      }
+    }
 
     useEffect(() => getClient(), []);
 
     return (
         <div>
             <h1 id="title">Happy Tail</h1>
-            <Switch>
-                <Route exact path="/">
-                    <Index client={client} createClient={createClient} />
-                </Route>
-                <Route
-                    path="/home/:id"
-                    render={(rp) => (
-                        <Show
+            <Route exact path="/">
+                <Index client={client} createClient={createClient} />
+            </Route>
+            <Route
+                path="/home/:id"
+                render={(rp) => (
+                    <Show
                         client={client}
                         updateClient={updateClient}
                         deleteClient={deleteClient}
-                            {...rp}
-                        />
-                    )}
-                />
-            </Switch>
+                        {...rp}
+                    />
+                )}
+            />
         </div>
     );
 }

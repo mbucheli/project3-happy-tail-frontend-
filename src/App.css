@@ -53,13 +53,13 @@ h3 {
 
 #navAbout {
   float: left;
-  margin-left: 150px;
+  margin-left: 20px;
   color: whitesmoke;
 }
 
 #navContactUs {
   float: right;
-  margin-right: 150px;
+  margin-right: 20px;
   color: whitesmoke;
 }
 
